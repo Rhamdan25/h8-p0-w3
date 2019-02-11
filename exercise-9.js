@@ -1,13 +1,23 @@
 //Mencari Mean
 
 function cariMean(arr){
-        var result = 0;
-        for (i = 0; i < arr.length ; i++ ){
-            result += arr[i]
-        }
-        var mean = result / arr.length
-        return Math.round(mean)
+    var sum = 0
+    for (var i =0 ; i < arr.length ; i++){
+        sum += arr[i]
     }
+    // console.log (sum);
+    var mean = sum / arr.length;
+    var result = Math.round(mean);
+
+    return result;
+    
+    // var result = 0;
+    // for (var i = 0; i < arr.length ; i++ ){
+    //     result += arr[i]
+    // }
+    // var mean = result / arr.length
+    // return Math.round(mean)
+}
 // TEST CASES
 console.log(cariMean([1, 2, 3, 4, 5])); // 3
 console.log(cariMean([3, 5, 7, 5, 3])); // 5

@@ -1,15 +1,26 @@
 function pasanganTerbesar(num) {
-    // you can only write your code here!
-    numSet = num.toString()
-    result = 0
-    for (var i = 0; i < numSet.length; i++) {
-      if (numSet[i]+numSet[i+1] > result ) {
-          result = numSet[i]+numSet[i+1]
-      }
+  // you can only write your code here!
+    var numSet = num.toString()
+    var result = 0
+    for (var i = 0 ; i < numSet.length; i ++){
+        if (numSet[i] + numSet[i+1] > result){
+            result = Number (numSet[i] + numSet[i+1])
+        }
     }
-    return result
+    return result;
+
+
+  // var numSet = num.toString()
+  // var result = 0
+  // for (var i = 0; i < numSet.length; i++) {
+  //   if (numSet[i]+numSet[i+1] > result ) {
+  //       result = Number(numSet[i]+numSet[i+1])
+  //   }
   
-  }
+  // }
+  // return result
+
+}
   
   // TEST CASES
   console.log(pasanganTerbesar(641573)); // 73

@@ -2,15 +2,14 @@ function numPalindrome(num) {
     var chkPalindrome = false
     while (chkPalindrome === false) {
         num++
-        numString = String(num)
-        numRev = ''
+        var numString = String(num)
+        var numRev = ''
         for (var i = numString.length - 1; i >=0; i--) {
             numRev += numString[i]
         }
         numCheck = Number(numRev)
         if (numCheck == num) {
             return num;
-            chkPalindrome = true;
         }
     }
 }

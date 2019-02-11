@@ -1,17 +1,51 @@
 //Palindrome
 
 function palindrome(kata) {
-    var pal = "";
-    for(var i = kata.length-1 ; i >= 0 ; i--){
-        pal += kata[i];
+    var kataBalik =''
+
+
+    for (var i = kata.length-1 ; i >= 0  ; i--){
+        kataBalik += kata[i]
     }
-    
-    if (kata == pal) {
+
+    if (kataBalik === kata){
         return true;
     }
     else {
         return false;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // var pal = "";
+    // for(var i = kata.length-1 ; i >= 0 ; i--){
+    //     pal += kata[i];
+    // }
+    
+    // if (kata == pal) {
+    //     return true;
+    // }
+    // else {
+    //     return false;
+    // }
     
   }
   

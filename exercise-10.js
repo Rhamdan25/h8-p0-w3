@@ -1,21 +1,21 @@
 //Perkalian Unik
 
 function perkalianUnik(arr) {
-    all = 1
-    for (var i = 0; i < arr.length; i++) {
+  var all = 1
+  for (var i = 0; i < arr.length; i++) {
 
-      all *= arr[i] 
-    }
+    all *= arr[i] 
+  }
 
-    result = []
-    for (var j = 0; j < arr.length; j++) {
-      hasil = all / arr[j]
-      result.push(hasil)
-    }
-    
-    return result
+  var result = []
+  for (var j = 0; j < arr.length; j++) {
+    var hasil = all / arr[j]
+    result.push(hasil)
   }
   
+  return result
+}
+
   // TEST CASES
   console.log(perkalianUnik([2, 4, 6])); // [24, 12, 8]
   console.log(perkalianUnik([1, 2, 3, 4, 5])); // [120, 60, 40, 30, 24]

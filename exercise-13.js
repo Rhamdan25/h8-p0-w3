@@ -2,14 +2,14 @@
 
 function targetTerdekat(arr) {
 
-    postO = []
+    var postO = []
     for (var i = 0; i < arr.length; i++) {
         if (arr[i] === 'o') {
             postO.push(i)
         }
     }
 
-    postX = []
+    var postX = []
     for (var j = 0; j < arr.length; j++) {
         if (arr[j] === 'x') {
             postX.push(j)

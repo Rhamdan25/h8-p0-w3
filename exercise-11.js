@@ -2,8 +2,8 @@
 
 function tentukanDeretAritmatika(arr) {
 
-    selisihAwal = arr[1] - arr[0]
-    cekSelisih = 0
+    var selisihAwal = arr[1] - arr[0]
+    var cekSelisih = 0
     for (var i = 0; i < arr.length-1; i++) {
         cekSelisih = arr[i + 1] - arr[i]
     
